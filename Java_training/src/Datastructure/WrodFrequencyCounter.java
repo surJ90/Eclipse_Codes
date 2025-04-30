@@ -12,7 +12,7 @@ public class WrodFrequencyCounter {
 		String sentence;
 		
 		System.out.println("Enter your sentence here: ");
-		sentence = in.nextLine().toLowerCase().replaceAll("[^a-zA-Z0-9]", " ");
+		sentence = in.nextLine().toLowerCase().replaceAll("[^a-z0-9]", " ");
 		
 		String[] words = sentence.split(" ");
 		
