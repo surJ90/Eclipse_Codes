@@ -125,6 +125,21 @@ public class LinkedList {
 		}
 		System.out.println(iter.data);
 	}
+	
+	public Node reverseList(Node head) {
+		if (head == null || head.next == null) {
+			return head;
+		}
+		Node prev = null, curr = head, nxt;
+		while (curr != null) {
+			nxt = curr.next;
+			curr.next = prev;
+			
+			prev = curr;
+			curr = nxt;
+		}
+		return prev;
+	}
 
 	public static void main(String[] args) {
 		
@@ -137,7 +152,8 @@ public class LinkedList {
 		ll.insertAtPosition(2, 15);
 		ll.deleteAtPosition(-1);
 		ll.display();
+		ll.head = ll.reverseList(ll.head);
+		ll.display();
 
 	}
-
 }
