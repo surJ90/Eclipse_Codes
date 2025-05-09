@@ -58,7 +58,7 @@ class Queue {
 		return queue[tail];
 	}
 	
-	int size() {return size;}
+	int size() { return size; }
 	
 	void printQueue() {
 		if (head == -1 && tail == -1) {
