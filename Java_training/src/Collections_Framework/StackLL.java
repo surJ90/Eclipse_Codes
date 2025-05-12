@@ -1,5 +1,7 @@
 package Collections_Framework;
 
+import java.util.Stack;
+
 public class StackLL {
 	
 	private Node top;
@@ -76,7 +78,9 @@ public class StackLL {
 		st.pop();
 		st.pop();
 		st.printStack();
-
+		
+		Stack<Integer> s = new Stack<>();
+//		s.push(10);
+		System.out.println(s.pop());
 	}
-
 }
